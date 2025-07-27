@@ -1,34 +1,28 @@
+import { HashRouter } from 'react-router-dom'
+import MyCanvas from './components/fiber/MyCanvas'
+import Content from './components/ui/Content'
+import { ThemeContext, themes } from './context/theme-context'
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import styled from 'styled-components'
+
+const CanvasWrapper = styled.div`
+  filter: ${(p) => (p.theme === 'color' ? 'grayscale(0%)' : 'grayscale(100%)')};
+  width: 100%;
+  height: 100%;
+  transition: filter 0.5s ease;
+`
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [theme, setTheme] = useState('color')
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <ThemeContext.Provider value={{ themes, theme, setTheme }}>
+      <CanvasWrapper theme={theme}>
+        <MyCanvas />
+      </CanvasWrapper>
+      <HashRouter basename="/">
+        <Content theme={theme} />
+      </HashRouter>
+    </ThemeContext.Provider>
   )
 }
 
