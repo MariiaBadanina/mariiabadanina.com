@@ -58,7 +58,7 @@ const ExternalButton = styled(Link)`
   border-radius: 30px;
 `
 
-const StyledMarkdown = styled(Markdown)`
+const MarkdownWrapper = styled.div`
   margin: 30px 0 20px 0;
   a {
     text-decoration: underline;
@@ -89,9 +89,13 @@ const Project = ({
           <Title>{title}</Title>
           <ContentContainer>
             <Tags tags={tags} theme={theme} />
-            <StyledMarkdown>{pageInfo}</StyledMarkdown>
+            <MarkdownWrapper>
+              <Markdown>{pageInfo}</Markdown>
+            </MarkdownWrapper>
             <Img bg={img} />
-            <StyledMarkdown>{description}</StyledMarkdown>
+            <MarkdownWrapper>
+              <Markdown>{description}</Markdown>
+            </MarkdownWrapper>
             <ProjectLinkWrapper>
               <Subtitle>Check it out</Subtitle>
               <ExternalButtonWrapper>
