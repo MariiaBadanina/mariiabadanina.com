@@ -69,12 +69,12 @@ const Home = ({ theme }) => {
     <MaxWidth>
       <HeroTextWrapper>
         <HeroText>
-          <RegularText>Maria Badanina</RegularText>
+          <RegularText>Mariia Badanina</RegularText>
           <AccentText theme={theme}>frontend</AccentText>
         </HeroText>
         <HeroText>
           <AccentText theme={theme}>developer</AccentText>
-          <RegularText>based in Columbus GA</RegularText>
+          <RegularText>based in USA</RegularText>
         </HeroText>
       </HeroTextWrapper>
     </MaxWidth>

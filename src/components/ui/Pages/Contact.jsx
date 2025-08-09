@@ -29,21 +29,21 @@ const Contact = () => {
           <Title>Contact</Title>
           <Text>
             <StyledLink
-              to="https://www.linkedin.com/in/mariabadanina/"
+              to="https://www.linkedin.com/in/mariiabadanina/"
               target="_blank"
             >
               Linkedin
             </StyledLink>
-            <StyledLink to="https://github.com/MariaBadanina" target="_blank">
+            <StyledLink to="https://github.com/MariiaBadanina" target="_blank">
               GitHub
             </StyledLink>
             <StyledLink
-              to="https://www.instagram.com/maria__badanina/"
+              to="https://www.instagram.com/mariia__badanina/"
               target="_blank"
             >
               Instagram
             </StyledLink>
-            <StyledLink to="mailto:maria.badanina.s@gmail.com" target="_blank">
+            <StyledLink to="mailto:mariiabadaninajob@gmail.com" target="_blank">
               Mail
             </StyledLink>
           </Text>

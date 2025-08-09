@@ -99,12 +99,20 @@ const Project = ({
             <ProjectLinkWrapper>
               <Subtitle>Check it out</Subtitle>
               <ExternalButtonWrapper>
-                <ExternalButton to={githubUrl} theme={theme}>
-                  GitHub
-                </ExternalButton>
-                <ExternalButton to={externalUrl} theme={theme}>
-                  Visit site
-                </ExternalButton>
+                {githubUrl && (
+                  <ExternalButton to={githubUrl} theme={theme} target="_blank">
+                    GitHub
+                  </ExternalButton>
+                )}
+                {externalUrl && (
+                  <ExternalButton
+                    to={externalUrl}
+                    theme={theme}
+                    target="_blank"
+                  >
+                    Visit site
+                  </ExternalButton>
+                )}
               </ExternalButtonWrapper>
             </ProjectLinkWrapper>
           </ContentContainer>

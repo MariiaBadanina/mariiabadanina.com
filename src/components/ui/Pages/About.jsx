@@ -18,26 +18,24 @@ const About = () => {
           <Title>About</Title>
           <Text>
             <p>
-              Hey there! I'm Maria, a Frontend Developer with a graphic design
-              background. I've been doing this for over 5 years, working with
-              HTML, CSS, JavaScript, and React.
+              Hi, I’m Maria — a Frontend Developer with 6+ years of experience
+              and a background in graphic design. I work with modern tools like
+              React, TypeScript, Vite, Next.js, Tailwind CSS, React Query,
+              Three.js and AI integrations, to build responsive, accessible, and
+              performant user interfaces.
             </p>
             <p>
-              When it comes to me, I'd say I'm kind, caring, and independent.
-              I'm always trying to be myself while staying professional. I have
-              made continuous learning a part of my daily routine, and I
-              understand that a great product is the result of strong teamwork,
-              even when it's not always easy. 😄
+              I thrive in diverse, collaborative teams where ideas come from
+              different cultures and perspectives. I believe the best products
+              happen when creativity meets thoughtful engineering and when
+              people feel safe to bring their whole selves to work.
             </p>
             <p>
-              When I'm not working, you might catch me on a TikTok binge,
-              getting artsy in Procreate, or leveling up my coding skills. Oh,
-              and let's not forget those occasional existential moments.
-            </p>
-            <p>
-              I'm excited about the chance to use my skills with perseverance and
-              passion for your project and create something that exceeds your
-              expectations. Let's team up and make great things happen!
+              I’m a detail-oriented creator who enjoys taking the time to do
+              things well. Whether I’m refining a UI component or painting in
+              oils, I value the process as much as the finished piece. This
+              mindset helps me bring care, patience, and focus into every
+              project I work on.
             </p>
           </Text>
         </BluredContainer>

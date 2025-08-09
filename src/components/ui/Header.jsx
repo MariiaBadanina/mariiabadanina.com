@@ -1,9 +1,9 @@
 import { animated, config, useSpring } from '@react-spring/web'
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import { ThemeContext } from '../../context/theme-context'
-import { Melted, Drop, Name, Moon, Sun } from './Icons'
+import { Drop, Moon, Sun } from './Icons'
 import MaxWidth from './MaxWidth'
 import ScreenSizes from '../../config/mediaVariables'
 import { useScreenDetector } from '../../hooks/index'
@@ -83,22 +83,12 @@ const ListItem = styled.li`
   margin-right: 30px;
 `
 const LogoWrapper = styled(Link)`
-  transform: scale(0.7);
+  font-size: 12px;
+  padding: 0 20px;
   @media (min-width: ${ScreenSizes.tablet}) {
-    transform: scale(1);
+    font-size: 20px;
   }
 `
-const Logo = styled.div`
-  cursor: pointer;
-  position: relative;
-`
-const LogoMelted = styled(Melted)`
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-`
-const LogoName = styled(Name)``
 
 const Header = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -138,13 +128,8 @@ const Header = () => {
 
   return (
     <HeaderWrapper>
-      <MaxWidth justifyContent="space-between">
-        <LogoWrapper to="/">
-          <Logo>
-            <LogoName />
-            <LogoMelted />
-          </Logo>
-        </LogoWrapper>
+      <MaxWidth justifyContent="space-between" alignItems="center">
+        <LogoWrapper to="/">Home</LogoWrapper>
         <NavWrapper>
           <Nav>
             <CurrentPageMarker style={menuAnimation} />

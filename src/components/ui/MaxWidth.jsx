@@ -5,6 +5,7 @@ const Flex = styled.div`
   display: flex;
   flex-direction: ${(p) => p.flexDirection};
   justify-content: ${(p) => p.justifyContent};
+  align-items: ${(p) => p.alignItems};
   width: 100%;
   margin: 0 auto;
   @media (min-width: ${ScreenSizes.tablet}) {
@@ -21,9 +22,13 @@ const Flex = styled.div`
   }
 `
 
-const MaxWidth = ({ justifyContent, flexDirection, children }) => {
+const MaxWidth = ({ justifyContent, flexDirection, alignItems, children }) => {
   return (
-    <Flex justifyContent={justifyContent} flexDirection={flexDirection}>
+    <Flex
+      justifyContent={justifyContent}
+      flexDirection={flexDirection}
+      alignItems={alignItems}
+    >
       {children}
     </Flex>
   )
