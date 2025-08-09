@@ -4,4 +4,5 @@ import svgr from '@svgr/rollup'
 
 export default defineConfig({
   plugins: [react(), svgr({ exportAsDefault: true })],
+  base: '/',
 })
