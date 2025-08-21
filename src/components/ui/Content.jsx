@@ -1,4 +1,4 @@
-import { config, useTransition } from '@react-spring/web'
+import { animated, config, useTransition } from '@react-spring/web'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import Header from './Header'
