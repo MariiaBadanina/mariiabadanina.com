@@ -20,6 +20,7 @@
     "@react-three/rapier": "^2.1.0",
     "lamina": "^1.2.2",
     "normalize.css": "^8.0.1",
+    "postprocessing": "^6.37.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-markdown": "^10.1.0",

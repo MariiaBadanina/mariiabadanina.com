@@ -32,6 +32,9 @@ importers:
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
+      postprocessing:
+        specifier: ^6.37.7
+        version: 6.37.7(three@0.178.0)
       react:
         specifier: ^19.1.0
         version: 19.1.1
