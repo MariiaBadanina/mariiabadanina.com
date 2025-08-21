@@ -1,13 +1,13 @@
-import { animated, config, useTransition } from '@react-spring/web'
+import { config, useTransition } from '@react-spring/web'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import Header from './Header'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Home from './pages/Home'
-import Work from './pages/Work'
-import projects from '../../data/index'
-import Project from './pages/Project'
+import About from './Pages/About.jsx'
+import Contact from './Pages/Contact.jsx'
+import Home from './Pages/Home.jsx'
+import Work from './Pages/Work.jsx'
+import projects from '../../data/index.js'
+import Project from './Pages/Project.jsx'
 
 const StyledContainer = styled.main`
   position: fixed;
